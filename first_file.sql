@@ -1,0 +1,6 @@
+CREATE TABLE cats_one
+(
+    cat_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50),
+    age INT NOT NULL
+);

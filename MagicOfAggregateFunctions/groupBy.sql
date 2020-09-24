@@ -1,0 +1,1 @@
+SELECT CONCAT('In ',release_year,' ',COUNT(*),' ','book(s) release') FROM books GROUP BY release_year;

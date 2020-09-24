@@ -1,0 +1,1 @@
+SELECT MIN(release_year) FROM books;

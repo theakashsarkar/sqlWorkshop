@@ -1,0 +1,21 @@
+CREATE TABLE inventory(
+    iteam_name VARCHAR(100),
+    price DECIMAL(8,2),
+    quantity INT
+)
+SELECT CURTIME();
+SELECT CURDATE();
+SELECT DAYOFWEEK(CURDATE());
+SELECT DAYOFWEEK(NOW());
+SELECT DATE_FORMAT(NOW(), '%w');
+SELECT DAYOFNAME(NOW());
+SELECT DATE_FORMAT(NOW(), '%W');
+SELECT DATE_FORMAT(CURDATE(),'%m/%d/%Y');
+SELECT DATE_FORMAT(NOW(),'%M %D at %H:%i:%s');
+CREATE TABLE twice(
+    contain VARCHAR(100),
+    userName VARCHAR(50),
+    create_at TIMESTAMP DEFAULT NOW()
+);
+INSERT INTO twice(contain,userName) VALUES ('LOL LOL LOL','AKASH SARKAR');
+SELECT * FROM twice;
